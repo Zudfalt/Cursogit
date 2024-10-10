@@ -3,12 +3,24 @@ Se utiliza cuando se comienza el proyecto, conseguimos que git cree dos areas
 una de las areas es stagin area o area de ensayo, que viene siendo un area temporal.
 luego tenemos el segundo area que es donde se almacena la copia, que estamos siguiendo.
 
-git add
+git add (y el nombre de los documentos que quieras incluir)
 Es necesaria para hacer el seguimiento de un archivo, de uno, no necesariamente de todos.
 Llevando el archivo internamente desde el directorio de trabajo, hasta el area de ensayo.
 
-git commit
+git commit (-m "Para agregar algun comentario del estado guardado"
 Este tercer comando, traslada el archivo o archivos del area de ensayo, hasta el repositorio, creando una copia o un respaldo
 
 git status -s
 te permite ir observando que archivos estan siendo guardados en el git a tiempo real
+
+Para subir los archivos al github ha sido complicado, se ha utilizado el comando 
+git remote add (Nombre que desees) (seguido del link o url del repositorio de github)
+#ejemplo: git remote add curso https://github.com/Zudfalt/Cursogit.git
+
+luego se ha cargado todo del git al github a traves de la consola, pero antes de ello
+se ha entrado a la configuracion del github y se ha generado un token, donde autorizamos
+la lectura y escritura del repositorio en la casilla "REPO", generamos el token y continuamos.
+
+git push curso master
+#Nos sale para añadir el nombre de usuario de github y luego en vez de una contraseña
+#colocamos el token, ya que desde 2021, github no permite usar la contraseña
