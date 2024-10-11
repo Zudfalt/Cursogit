@@ -24,3 +24,19 @@ la lectura y escritura del repositorio en la casilla "REPO", generamos el token 
 git push curso master
 #Nos sale para añadir el nombre de usuario de github y luego en vez de una contraseña
 #colocamos el token, ya que desde 2021, github no permite usar la contraseña
+
+git pull curso master
+#Nos permite cargar lo que modifiquemos directamente desde el GitHub, vendria siendo el
+#caso opuesto a el git push.
+
+Por cierto, cada vez que sea necesario cargar informacion al github, el sistema te pedira
+autentificacion, por lo que es necesario guardar siempre el token ya que solo te lo muestra
+una vez.
+
+Para guardar las versiones del sistema, es muy necesario usar los TAG, de la siguiente manera:
+git tag (fecha del proyecto) - (Nombre de la version)
+git tag 11-10-24v1 -m "Version 1 del proyecto"
+
+Y para finalizar y verificar si se guardo correctamente la version junto a las modificaciones y commits, utilizamos lo siguiente:
+
+git log --oneline
