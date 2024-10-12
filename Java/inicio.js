@@ -1,5 +1,5 @@
 function saludo() {
 
-    alert ("Hola, Mundo");
+    alert ("Hola, Mundo.");
     
 }
